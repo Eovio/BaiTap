@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script>
+
+    $(jQuery).ready(function(){
+      $('img').hover(function(){
+        $(this).addClass('anh');
+      },function(){
+        $(this).removeClass('anh');
+      })
+      
+      $('#myTooltip').on('hidden.bs.tooltip', function () {
+        $('#element').tooltip('show')
+        $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      })
+      $('body').scrollspy({ target: '#navbar-example' })
+      $('#example').tooltip(options)
+      })
+
+    })
+   
+    </script>
+    <style>
+      
+      body {
+       position: relative;
+      }
+      .anh{border:1px solid red;
+      opacity: 0.2;
+      transition: 2s;
+      }
+    img:hover{
+      border:1px solid red;
+      opacity: 0.2;
+      transition: 2s;
+    }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+        <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 table-responsive-sm">
+                      <div class="row">
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                        <div class="col">col</div>
+                      </div>
+                      <table class="table">
+                            <caption>List of users</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">Ra Mắt Điện Thoại Mới</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 table-responsive-md">
+                        <table class="table">
+                            <caption>List of users</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">Giảm Giá 10% Nhân Nhịp Khai Chương</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                      </div>
+                      
+                      <div class="table-responsive-lg">
+                        <table class="table">
+                          ...
+                        </table>
+                      </div>
+                      
+                      <div class="table-responsive-xl">
+                        <table class="table">
+                          ...
+                        </table>
+                      </div>
+                </div>
+                <div class="row">
+                    <marquee id="marq" scrollamount="1" 
+                    direction="right" loop="50" 
+                    scrolldelay="0" behavior="scroll" 
+                    onmouseover="this.stop()" 
+                    onmouseout="this.start()">hjjkkk
+                  </marquee> 
+                </div>
+                <div class="row">
+                    <img id="anh" src="images/tt.jpg" href="#" height="1000px" width="1000px">
+                </div>
+                <button type="button" id="bt" class="btn btn-lg btn-danger" 
+                data-toggle="popover" 
+                title="Popover title" 
+                data-content="And here's some amazing content. It's very engaging. Right?"
+                >
+                  Click to toggle popover
+                </button>
+        </div>
+        <div class="container">
+          <div class="row">
+
+              <div id="navbar-example">
+                  <ul class="nav nav-tabs" role="tablist">
+
+            <nav id="navbar-example2" class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#fat">@fat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mdo">@mdo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one">one</a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <h4 id="fat">@fat</h4>
+              <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+
+                  Item 1-1
+                  Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.
+                  
+                  Item 2-2
+                  Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.
+                  
+                  Item 2
+                  Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+              <h4 id="mdo">@mdo</h4>
+              <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.
+
+                  Item 1-1
+                  Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.
+                  
+                  Item 2-2
+                  Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.
+                  
+                  Item 2
+                  Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.</p>
+              <h4 id="one">one</h4>
+              <p>...</p>
+              <h4 id="two">two</h4>
+              <p>...</p>
+              <h4 id="three">three</h4>
+              <p>...</p>
+            </div>
+
+          </ul>
+        </div>
+
+          </div>
+
+          <div class="row">
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                  Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                  Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                  Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                  Tooltip on left
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                  Tooltip with HTML
+                </button>
+          </div>
+        </div>
+        <a href="#list-item-1" class="list-group-item list-group-item-action list-group-item-dark">Mua online qua HTD</a>
+                <a href="#list-item-2" class="list-group-item list-group-item-action">Phần thưởng mai mắn</a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
